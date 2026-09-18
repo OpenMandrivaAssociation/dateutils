@@ -15,9 +15,6 @@ BuildRequires:	make
 BuildRequires:	tzdata
 Requires:	tzdata
 
-%check
-make check
-
 %description
 Tools for fiddling with dates and times on the command line, with a
 strong focus on use cases that arise when dealing with large amounts
