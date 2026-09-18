@@ -15,6 +15,10 @@ BuildRequires:	make
 BuildRequires:	tzdata
 Requires:	tzdata
 
+# make install also drops LICENSE under %%{_docdir}; we ship it via %%license
+%install -a
+rm -f %{buildroot}%{_datadir}/doc/%{name}/LICENSE
+
 %description
 Tools for fiddling with dates and times on the command line, with a
 strong focus on use cases that arise when dealing with large amounts
